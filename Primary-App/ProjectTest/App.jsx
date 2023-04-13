@@ -1,21 +1,17 @@
+import React from 'react';
+
 import { View } from 'react-native';
 
-import BtnTest from './Comps/CompButton/button'
-
-import { Style } from './Comps/Styles/style';
-
+import Touch from './Comps/CompTouch/touch'
 
 export default function App() {
 
-
   return (
+    
+    <View> 
       
-    <View Style={Style.container}>
-      
-      <BtnTest />
-      
+        <Touch />
+
     </View>
-    
-    
   )
 }
