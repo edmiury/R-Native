@@ -1,15 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import {SafeAreaView, ScrollView, Text } from 'react-native';
+import { SafeAreaView, ScrollView, Text, RefreshControl } from 'react-native';
+
 import { Style } from '../Styles/style';
+
 
 export default function () {
 
+    const [on, setOn] = useState(false)
+
+    const refresh = () => {
+        setOn(!on)
+        setTimeout( () => {setOn(false)}, 3000 )
+    }
+
+ 
     return (
         
         <SafeAreaView style = { Style.container}>
 
-            <ScrollView style = {Style.scroll}>
+            <ScrollView
+                style={Style.scroll}
+                refreshControl = { 
+                    <RefreshControl
+                        refreshing={on}
+                        onRefresh={ refresh }
+                    />
+                }
+            >
 
                 <Text style = { Style.title }> O que significa Lorem ipsum? </Text>
                 <Text style = { Style.text }>

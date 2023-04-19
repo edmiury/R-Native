@@ -24,13 +24,9 @@ export const Style = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         textAlign: "justify",
+        
     },
     
-    btn: {
-        marginTop: 20,
-        backgroundColor: 'black',
-    },
-
     Img: {
         flexGrow: 1,
         width: '100%',
@@ -52,7 +48,25 @@ export const Style = StyleSheet.create({
     scroll: {
         backgroundColor: '#999',
         borderRadius: 10,
+        padding: 15,
+    },
+
+    modal: {
+        backgroundColor: '#800000',
+        borderWidth: 1,
+        borderRadius: 10,
+        padding: 10
+    },
+
+    textModal: {
+        color: '#fff'
+    },
+
+    btn: {
+        marginBottom: 10,
         padding: 10,
-        
-    }
+        fontWeight: 'bold'
+    } 
+
+
 });

@@ -1,17 +1,12 @@
 import React from 'react';
 
-import { View } from 'react-native';
-
-import Touch from './Comps/CompTouch/touch'
+import StatusBar from './Comps/CompStatusBar/statusBar';
 
 export default function App() {
-
+ 
   return (
     
-    <View> 
-      
-        <Touch />
-
-    </View>
+      <StatusBar />
+  
   )
 }
