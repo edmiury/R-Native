@@ -1,12 +1,22 @@
 import React from 'react';
 
-import StatusBar from './Comps/CompStatusBar/statusBar';
+import {
+  View
+} from 'react-native';
 
-export default function App() {
- 
+import Fetch from './Comps/Comp Fetch/fetch'
+
+import { Style } from './style';
+
+export default App = () => {
+
   return (
     
-      <StatusBar />
-  
+    <View style = { Style.container }>
+      
+        <Fetch />
+
+    </View>
+
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Text, ImageBackground } from 'react-native';
+import { View, ImageBackground } from 'react-native';
 
 import { Style } from '../Styles/style';
 
@@ -16,6 +16,7 @@ export default function imgBackground() {
         >
 
             <View >
+                
                <Switch />
 
             </View>

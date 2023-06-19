@@ -25,7 +25,7 @@ export default function () {
                 onPress = {() => {colorChange('#800000')}}
             />
 
-            <Button
+            {/* <Button
                 title='Color Blue'
                 onPress = {() => {colorChange('#000080')}}
             />
@@ -33,7 +33,7 @@ export default function () {
             <Button
                 title='Color Green'
                 onPress = {() => {colorChange('#008000')}}
-            />
+            /> */}
 
         </View>
     );
