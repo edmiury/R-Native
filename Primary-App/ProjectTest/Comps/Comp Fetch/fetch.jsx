@@ -19,8 +19,8 @@ export default () => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(value => setData(value))
-            .catch( () => Alert.alert('Atenção', 'Erro ao carregar '))
-    }, [data])
+            .catch(() => Alert.alert('Atenção', 'Erro ao carregar '))
+    }, [data]);
     
     const Register = item => {
         return (

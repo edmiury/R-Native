@@ -1,51 +1,47 @@
 import React, {useState} from 'react';
 
-import { View, Text, TouchableHighlight, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableHighlight, StyleSheet, TouchableOpacity, Button } from 'react-native';
 
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-export default function () {
+const Stack = createStackNavigator();
+
+export default function ({navigation}) {
 
     const [counter, setCounter] = useState(0);
 
     const start = () => setCounter(counter + 1);
     
 
-    return (
-        
+    return (  
         <View style={Style.container}>
-
             < TouchableHighlight
                 style={Style.touch}
                 onPress={start}
                 underlayColor='white'
             >
-
                 <Text style={Style.text}> + Counter </Text>
-                
+        
             </ TouchableHighlight>
-
             < TouchableHighlight
                 style={Style.touch2}
                 onPress={() => setCounter(counter - 1)}
                 underlayColor='white'
             >
-
                 <Text style={Style.text} > - Counter </Text>
-                
+        
             </ TouchableHighlight>
-
             < TouchableOpacity
                 style={Style.touch}
                 onPress={() => setCounter(0)}>
-
                 <Text style={Style.text}> Counter 0  </Text>
-
             </ TouchableOpacity>
-
             <Text style={Style.counter}> Counter:  {counter} </Text>
-
-        </View>
+            
+            <Button title='Modal → ' onPress={() => navigation.navigate('modal')} />
+        </View>                
     );
 }
 

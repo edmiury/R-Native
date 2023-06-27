@@ -1,12 +1,10 @@
 import React from 'react';
 
-import { Text, Button } from 'react-native';
+import { View, Text } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 
 import { createStackNavigator } from '@react-navigation/stack';
-
-// import {Home, SecondScreen} from './contentNavi'
 
 const Content = createStackNavigator();
 
@@ -34,7 +32,6 @@ export default function () {
                 <Content.Screen 
                     name='Home'
                     component={Home}
-                
                 />
 
             </Content.Navigator>
