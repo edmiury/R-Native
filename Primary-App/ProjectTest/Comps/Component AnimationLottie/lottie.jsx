@@ -10,7 +10,12 @@ import Lottie from 'lottie-react-native';
 export default function  AnimationLottie () {
     return (
         <View>
-            <Text> sbyvsaydvsdvy </Text>
+            
+            <Lottie
+                source={require('../../assets/animationSave.json')}
+                autoPlay
+            />
+
         </View>
     )
 }

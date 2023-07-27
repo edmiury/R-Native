@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-  View
+  View,
+  Text
 } from 'react-native';
 
 import AnimationLottie from './Comps/Component AnimationLottie/lottie';
@@ -8,9 +9,8 @@ import AnimationLottie from './Comps/Component AnimationLottie/lottie';
 export default function App() {
   return (
     <View>
-
-      <AnimationLottie />
-
+      <Text> sadvysdvda </Text>
+      {/* <AnimationLottie/>  */}
     </View> 
   )
 }
